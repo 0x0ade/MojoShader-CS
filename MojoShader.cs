@@ -407,6 +407,7 @@ public static class MojoShader
 		uint swizcount,
 		MOJOSHADER_samplerMap[] smap,
 		uint smapcount,
+		bool se,
 		MOJOSHADER_malloc m,
 		MOJOSHADER_free f,
 		IntPtr d
@@ -421,6 +422,7 @@ public static class MojoShader
 	public static extern IntPtr MOJOSHADER_parsePreshader(
 		byte[] buf,
 		uint len,
+		bool se,
 		MOJOSHADER_malloc m,
 		MOJOSHADER_free f,
 		IntPtr d
@@ -1115,7 +1117,8 @@ public static class MojoShader
 		MOJOSHADER_swizzle[] swiz,
 		uint swizcount,
 		MOJOSHADER_samplerMap[] smap,
-		uint smapcount
+		uint smapcount,
+		bool se
 	);
 
 	/* IntPtr refers to a const MOJOSHADER_parseData*
