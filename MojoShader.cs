@@ -483,6 +483,7 @@ public static class MojoShader
 		uint swizcount,
 		MOJOSHADER_samplerMap[] smap,
 		uint smapcount,
+		bool se,
 		MOJOSHADER_malloc m,
 		MOJOSHADER_free f,
 		IntPtr d
@@ -496,6 +497,7 @@ public static class MojoShader
 			swizcount,
 			smap,
 			smapcount,
+			se,
 			m,
 			f,
 			d
